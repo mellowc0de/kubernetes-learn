@@ -127,8 +127,11 @@ Install minikube for windows using the following link:  [minikube for Windows](h
 ### Download & Install Podman
 
 Install Podman using the following link:  [Podman](https://podman.io/)
+<br>
 
 ### Run minikube using Podman as the driver (except when using Rootless Podman)
+
+Full instructions can be followed from the following link: [minikube podman driver](https://minikube.sigs.k8s.io/docs/drivers/podman/)
 
 ```cmd
 minikube start --driver=podman --container-runtime=cri-o
