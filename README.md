@@ -119,3 +119,29 @@ Use "kubectl <command> --help" for more information about a given command.
 Use "kubectl options" for a list of global command-line options (applies to all
 commands).
 ```
+
+### Download & Install minikube
+
+Install minikube for windows using the following link:  [minikube for Windows](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download)
+
+### Download & Install Podman
+
+Install Podman using the following link:  [Podman](https://podman.io/)
+
+### Run minikube using Podman as the driver (except when using Rootless Podman)
+
+```cmd
+minikube start --driver=podman --container-runtime=cri-o
+```
+
+Alternatively, start with Podman as driver only:
+
+```cmd
+minikube start --driver=podman
+```
+
+To make podman the default driver:
+
+```cmd
+minikube config set driver podman
+```
